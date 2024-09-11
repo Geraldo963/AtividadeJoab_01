@@ -6,32 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>SISTEMA DE GESTÃO ACADÊMICA</h1>
-    <br>
-    <h2><strong>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</strong></h2>
-    <br>
-    <form>
-        <label><strong>Login</strong></label>
-        <input type="text">
-        <br>
-        <br>
-        <label><strong>Senha</strong></label>
-        <input type="password">
-        <br>
-        <br>
-        <label><strong>Status</strong></label>
-        <select id="Status" name="Status">
-        <option value="Inativo">Inativo</option>
-        <option value="Ativo">Ativo</option>
-        <br>
-        <br>
-        <br>
-        <input type="radio" id="Técnico" name="fav_language" value="Técnico">
-        <label for>Técnico</label>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    </form>
-
+    <h1><mark>SISTEMA DE GESTÃO ACADÊMICA</mark></h1>
+    <table border="1">
+        <thead>
+            <th colspan="2">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</th>
+        </thead>
+        <tbody>
+           <tr>
+            <td>Login</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Senha</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td><select>
+            <option value="Inativo">Inativo</option>
+            <option value="Ativo">Ativo</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Tipo</td>
+            <td><input type="radio">Técnico
+            <input type="radio">Professor
+            <input type="radio">Aluno
+            </td>
+        </tr>
+        <tr>
+            <td>Data Criação</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Perfil</td>
+            <td><input type="radio">Convidado
+            <input type="radio">Administrador</td>
+        </tr>
+        <tr>
+            <td>Observação</td>
+            <td><textarea cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>Módulos</td>
+            <td><input type="checkbox">Compras
+                <input type="checkbox">Biblioteca
+                <input type="checkbox">Acadêmico
+                <input type="checkbox">Documentação
+                <input type="checkbox">Recursos Humanos</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <th><input type="submit" value="Cadastrar">
+            <input type="submit" value="Enviar"></th>
+        </tfoot>
+    </table>
 </body>
 </html>
